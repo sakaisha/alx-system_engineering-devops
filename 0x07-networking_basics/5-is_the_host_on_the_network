@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# This script is displaying listening ports
-
-if [ "$#" = 0 ]; then
+# This script is displaying ports
+if [ $# -ne 1 ]
+then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-else
-	ping -c 5 "$@"
+	exit
 fi
+ping "$1" -c 5
