@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays lines containing the bash word.
+trap 'echo "I am invincible!!!"' SIGTERM
+while true; do
+sleep 2
+echo "To infinity and beyond"
+done
