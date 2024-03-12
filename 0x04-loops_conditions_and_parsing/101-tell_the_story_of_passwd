@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the content of the file /etc/passwd
+cat < /etc/passwd | while read -r n; do
+    USERNAME=$(echo "$n" | cut -d ':' -f1)
+    GROUP_ID=$(echo "$n" | cut -d ':' -f4)
+    HOME_DIRECTORY=$(echo "$n" | cut -d ':' -f6)
+    COMMAND_SHELL=$(echo "$n" | cut -d ':' -f7)
+    USER_ID=$(echo "$n" | cut -d ':' -f3)
+    PASSWORD=$(echo "$n" | cut -d ':' -f2)
+    USER_ID_INFO=$(echo "$n" | cut -d ':' -f5)
+    echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND_SHELL. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO"
+done

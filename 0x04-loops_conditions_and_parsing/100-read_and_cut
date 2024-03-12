@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the content of the file /etc/passwd
+LIST=$(cat /etc/passwd)
+while true; do
+echo "$LIST" | cut -d ':' -f1,3,6
+break;
+done
