@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-# This script to change IP number
-cp etc/hosts ~/hosts.new
-HOST1='localhost'
-sed -i "/$HOST1/ s/^127.*$HOST1/127.0.0.2\t$HOST1/g" ~/hosts.new
-HOST2='facebook.com'
-echo $HOST2 >> ~/hosts.new
-sed -i "/$HOST2/ s//8.8.8.8\t$HOST2/g" ~/hosts.new
+# a Bash script that configures an Ubuntu server with specific requirements
+touch ~/hosts.new
+cp /etc/hosts ~/hosts.new
+sed -i 's/^127\.0\.0\.1.*/127.0.0.2 localhost/' ~/hosts.new
+echo '8.8.8.8 facebook.com' >> ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
