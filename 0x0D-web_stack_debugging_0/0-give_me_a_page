@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# transfers a file from our client to a server
+number=$(sudo docker ps | cut -d' ' -f 1 | tail -1)
+sudo docker exec -ti "$number" /bin/bash
+sudo service apache2 restart
+exit
