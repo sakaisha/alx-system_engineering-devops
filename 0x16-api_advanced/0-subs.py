@@ -12,16 +12,10 @@ def number_of_subscribers(subreddit):
         response = requests.get(url, headers=headers, allow_redirects=False)
         if response.status_code != 200:
             return 0
-        results = response.json().get("data", {})
-        return results.get("subscribers", 0)
+        data = response.json().get("data", None)
+        if data:
+            return data.get("subscribers", 0)
+        else:
+            return 0
     except requests.RequestException:
         return 0
-
-# Example usage:
-if __name__ == '__main__':
-    import sys
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        subscribers = number_of_subscribers(sys.argv[1])
-        print("OK")
