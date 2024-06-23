@@ -3,7 +3,7 @@ stmortem Report: The Great WordPress Meltdown of 2024
 
 Welcome to the postmortem of the century! Buckle up as we take you on a rollercoaster ride through the ups and downs of our recent WordPress outage. Hold on tight, because we promise it's going to be as thrilling as debugging can get.
 
-![Outage](https://i.imgur.com/Nu8KmlT.png)
+![Outage]
 
 ## 🚨 Issue Summary 🚨
 
@@ -63,7 +63,7 @@ Problem solved. Crisis averted.
 
 Thanks for joining us on this wild debugging adventure. We hope you enjoyed the ride as much as we enjoyed fixing it. Stay tuned for more tales from the trenches of system engineering!
 
-![Happy Ending](https://i.imgur.com/NWIn3ML.png)
+![Happy Ending]
 
 ---
 
@@ -75,4 +75,4 @@ Happy coding, and may your logs be ever informative!
 
 ---
 
-![Fix All the Bugs](https://i.imgur.com/YZobRIP.png)
+![Fix All the Bugs]
