@@ -1,5 +1,5 @@
 
-stmortem Report: The Great WordPress Meltdown of 2024
+Postmortem Report: The Great WordPress Meltdown of 2024
 
 Welcome to the postmortem of the century! Buckle up as we take you on a rollercoaster ride through the ups and downs of our recent WordPress outage. Hold on tight, because we promise it's going to be as thrilling as debugging can get.
 
