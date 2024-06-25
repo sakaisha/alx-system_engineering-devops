@@ -80,7 +80,6 @@ More advanced debugging tasks for web stacks.
 
 ### 0x19-postmortem
 Creating postmortem documentation to analyze and learn from incidents.
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
